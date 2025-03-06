@@ -7,21 +7,21 @@ public class A_module {
         // 1. 111, 1111, 11111 중에서 최소값, 최대값, 중간값을 구하는 로직을 작성하시오.
         System.out.println("min: " + min(111,1111, 11111));
         System.out.println("max: " + max(111,1111, 11111));
-        medium(111,1111, 11111);
+        System.out.println("medium: " + medium(111,1111, 11111));
 
         System.out.println("========================");
 
         // 2. 222, 2222, 22222 중에서 최소값, 최대값, 중간값을 구하는 로직을 작성하시오.
         System.out.println("min: " + min(222, 2222,22222));
         System.out.println("max: " + max(222, 2222,22222));
-        medium(222, 2222,22222);
+        System.out.println("medium: " + medium(222, 2222,22222));
 
         System.out.println("========================");
 
         // 3. 333, 3333, 33333 중에서 최소값, 최대값, 중간값을 구하는 로직을 작성하시오.
         System.out.println("min: " + min(333, 3333,33333));
         System.out.println("max: " + max(333, 3333,33333));
-        medium(333, 3333,33333);
+        System.out.println("medium: " + medium(333, 3333,33333));
 
         System.out.println("========================");
     }
@@ -51,18 +51,19 @@ public class A_module {
         return max;
     }
 
-    public static void medium(int g, int h, int i){
+    public static int medium(int g, int h, int i){
         int min = min(g, h, i);
         int max = max(g, h, i);
 
         if (g != max && g != min) {
-            System.out.println("medium : " + g);
+            return g;
         }
         if (h != max && h != min) {
-            System.out.println("medium : " + h);
+            return h;
         }
-        if (i != max && i != min) {
-            System.out.println("medium : " + i);
-        }
+//        if (i != max && i != min) {
+//            System.out.println("medium : " + i);
+//        }
+        return i;
     }
 }
