@@ -18,31 +18,26 @@ public class z_quiz {
         String p1 = sc.next();
         System.out.print("2P : ");
         String p2 = sc.next();
-        result(p1, p2);
+
+        // early return 빠른 리턴
+        if (p1.equals(p2)){
+            System.out.println("비김");
+            return;
+        }
+
+        String result = winOrLose(p1, p2);
+        System.out.println(result);
     }
 
-    public static void result(String p1, String p2) {
-        if (p1.equals("가위")) {
-            if (p2.equals("가위"))
-                System.out.println("비김");
-            else if (p2.equals("바위"))
-                System.out.println("패");
-            else
-                System.out.println("승");
-        } else if (p1.equals("바위")) {
-            if (p2.equals("바위"))
-                System.out.println("비김");
-            else if (p2.equals("보"))
-                System.out.println("패");
-            else
-                System.out.println("승");
+    private static String winOrLose(String p1, String p2) {
+        if(p1.equals("가위") && p2.equals("보")){
+            return "이김";
+        } else if (p1.equals("바위") && p2.equals("가위")) {
+            return "이김";
+        } else if (p1.equals("보") && p2.equals("바위")){
+            return "이김";
         } else {
-            if (p2.equals("보"))
-                System.out.println("비김");
-            else if (p2.equals("가위"))
-                System.out.println("패");
-            else
-                System.out.println("승");
+            return "짐";
         }
     }
 
