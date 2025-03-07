@@ -5,15 +5,14 @@ import java.util.Scanner;
 public class F_star {
 
     public static void main(String[] args) {
-        q1();
-        q2();
-        q3();
-        q4();
+//        q1();
+//        q2();
+//        q3();
+//        q4();
         q5();
-        q6();
+//        q6();
     }
-
-
+    
     private static void q1() {
         Scanner sc = new Scanner(System.in);
 
@@ -85,31 +84,53 @@ public class F_star {
         System.out.print("num: ");
         int num = sc.nextInt();
 
-        for (int i = 0; i < num; i++) {
-            for (int j = num - i; j > 1; j--) {
+        // 강사님 풀이
+        for (int x = 1; x <= num; x++) {
+            for (int i = 0; i < num - x; i++) {
                 System.out.print("  ");
             }
-            for (int j = 0; j <= i; j++) {
-                System.out.print("* ");
-            }
-            for (int j = i; j > 0; j--) {
+            for (int i = 0; i < 2 * x - 1; i++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
 
-        for (int i = 0; i < num - 1; i++) {
-            for (int j = 0; j <= i; j++) {
+        for (int y = 1; y <= num - 1; y++) {
+            for (int i = 0; i < y; i++) {
                 System.out.print("  ");
             }
-            for (int j = num - i; j > 1; j--) {
-                System.out.print("* ");
-            }
-            for (int j = num - i - 1; j > 1; j--) {
+            for (int i = 0; i < 2 * (num - y) - 1; i++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
+
+        // 나의 풀이
+//        for (int i = 0; i < num; i++) {
+//            for (int j = num - i; j > 1; j--) {
+//                System.out.print("  ");
+//            }
+//            for (int j = 0; j <= i; j++) {
+//                System.out.print("* ");
+//            }
+//            for (int j = i; j > 0; j--) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+//        for (int i = 0; i < num - 1; i++) {
+//            for (int j = 0; j <= i; j++) {
+//                System.out.print("  ");
+//            }
+//            for (int j = num - i; j > 1; j--) {
+//                System.out.print("* ");
+//            }
+//            for (int j = num - i - 1; j > 1; j--) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
     }
 
     private static void q6() {
