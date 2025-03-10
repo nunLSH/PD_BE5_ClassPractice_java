@@ -7,5 +7,4 @@ public class Run {
         coffee.setName("아메리카노");
         System.out.println(coffee.getName());
     }
-
 }
