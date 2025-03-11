@@ -56,7 +56,10 @@ public class B_RuntimeException {
 //            System.out.println("NullPointerException의 catch block");
 //            System.out.println(e.getMessage());
             // 모든 예외처리
-        } catch (Exception e) {
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
+            // 특정 타입에 대해 동일한 예외 처리
+        } catch (ClassCastException | ArrayIndexOutOfBoundsException | NullPointerException e) {
             System.out.println(e.getMessage());
         }
     }
