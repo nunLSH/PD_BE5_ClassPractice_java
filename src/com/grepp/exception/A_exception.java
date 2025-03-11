@@ -69,4 +69,18 @@ public class A_exception {
         URL url = new URL("http://www.naver.com");
         System.out.println("URL 객체 생성 성공!");
     }
+
+    // NOTE A04 throw
+    public void throwTimeOutEx() throws TimeOutException {
+        while (true) {
+            int delay = new Random().nextInt(5);
+            // 만약 지연시간이 3초 이상이면, 더 이상 기다릴 수 없다고 판단
+            // TimeOutException을 발생
+            if(delay > 3){
+                throw new TimeOutException("통신 연결시간이 4초이상이 지났습니다.");
+            }
+
+            System.out.println("통신에 성공했습니다.");
+        }
+    }
 }
