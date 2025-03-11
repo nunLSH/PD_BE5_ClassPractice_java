@@ -37,14 +37,23 @@ public class B_RuntimeException {
             Object obj = new Object();
 //            String str = (String) obj;
 
+            // ArrayIndexOutOfBoundsException의
             int[] arr = new int[2];
-            arr[2] = 10;
+//            arr[2] = 10;
+
+            // NullPointerException
+            String nullStr = null;
+            // null이 담겨있는 참조변수로 속성이나 메서드를 사용하려 할 경우 발생하는 예외
+            nullStr.equals("a");
 
         } catch (ClassCastException e){
             System.out.println("ClassCastException의 catch block");
             System.out.println(e.getMessage());
         } catch (ArrayIndexOutOfBoundsException e){
             System.out.println("ArrayIndexOutOfBoundsException의 catch block");
+            System.out.println(e.getMessage());
+        } catch (NullPointerException e){
+            System.out.println("NullPointerException의 catch block");
             System.out.println(e.getMessage());
         }
     }
