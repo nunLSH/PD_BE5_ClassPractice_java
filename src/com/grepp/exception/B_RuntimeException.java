@@ -33,12 +33,18 @@ public class B_RuntimeException {
 
     static void multiEx(){
         try {
-            // ClassCastException >> UnChecked Exception
+            // ClassCastException
             Object obj = new Object();
-            String str = (String) obj;
+//            String str = (String) obj;
+
+            int[] arr = new int[2];
+            arr[2] = 10;
 
         } catch (ClassCastException e){
             System.out.println("ClassCastException의 catch block");
+            System.out.println(e.getMessage());
+        } catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("ArrayIndexOutOfBoundsException의 catch block");
             System.out.println(e.getMessage());
         }
     }
