@@ -1,5 +1,6 @@
 package com.grepp.exception.coffee;
 
+import com.grepp.exception.custom.CommonException;
 import com.grepp.exception.custom.TimeOutException;
 import com.grepp.exception.custom.TimeOutRuntimeException;
 import java.util.Random;
@@ -11,10 +12,8 @@ public class Coffee {
             deductStock();
             addSalesCnt();
             System.out.println("커피음료 제공이 완료되었습니다.");
-        } catch (TimeOutRuntimeException e){
+        } catch (CommonException e){
             System.out.println(e.getMessage());
-        } finally {
-            System.out.println("은행서버와 통신을 종료합니다.");
         }
     }
 
@@ -31,8 +30,12 @@ public class Coffee {
     private void purchase() {
         int delay = new Random().nextInt(5);
 
-        if (delay > 0){
-            throw new TimeOutRuntimeException("은행 서버와 연결되지 못했습니다.");
+        try {
+            if (delay > 3) {
+                throw new TimeOutRuntimeException("은행 서버와 연결되지 못했습니다.");
+            }
+        } finally {
+            System.out.println("서버와의 통신을 종료합니다.");
         }
 
         System.out.println("재고 매입에 성공하였습니다.");
