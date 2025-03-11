@@ -13,9 +13,12 @@ public class Run {
 //        runtime.arithEx();
 //        ex.malformedURLEx();
 //        ex.throwsMalformedURLEx();
+        ex.throwNotValidEx(100);
+        System.out.println("예외처리 이후의 코드");
 
         try {
             ex.throwTimeOutEx();
+            System.out.println("클라이언트야 안녕?");
         } catch (TimeOutException e) {
             System.out.println("catch 블록입니다.");
             System.out.println("죄송합니다. 연결에 실패했습니다. 라고 사용자에게 알린다.");

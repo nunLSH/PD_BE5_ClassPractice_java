@@ -83,4 +83,12 @@ public class A_exception {
             System.out.println("통신에 성공했습니다.");
         }
     }
+
+    public void throwNotValidEx(int price){
+        if (price < 0) {
+            throw new NotValidException("가격은 0보다 작을 수 없습니다.");
+        }
+
+        System.out.println(price + "원 입니다.");
+    }
 }
