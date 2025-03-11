@@ -1,11 +1,5 @@
 package com.grepp.exception;
 
-// NOTE A01 Error와 예외(Exception)
-// Error: 예측이 불가능하고 대응이 안 되는 문제
-// Exception: 예측이 가능하고 대응이 가능한 문제, 사전에 예방 (예외처리)
-
-// Compile Exception: 컴파일 시점에 발생하는 예외, IDE가 알려주는 예외
-// Runtime Exception: 실행되는 시점에 발생하는 예외
 
 import com.grepp.exception.custom.NotValidException;
 import com.grepp.exception.custom.TimeOutException;
@@ -16,6 +10,13 @@ import java.net.URL;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.SequencedCollection;
+
+// NOTE A01 Error와 예외(Exception)
+// Error: 예측이 불가능하고 대응이 안 되는 문제
+// Exception: 예측이 가능하고 대응이 가능한 문제, 사전에 예방 (예외처리)
+
+// Compile Exception: 컴파일 시점에 발생하는 예외, IDE가 알려주는 예외
+// Runtime Exception: 실행되는 시점에 발생하는 예외
 
 // Checked Exception: 코드로 예외처리가 불가능한 경우, 예외처리를 강제하는 Exception
 // UnChecked Exception: 코드로 예외처리가 가능한 경우, 예외처리를 강제하지 않는 Exception
@@ -59,5 +60,13 @@ public class A_exception {
         } finally {
             System.out.println("연결을 종료합니다.");
         }
+    }
+
+    // NOTE A03 throws
+    // throws: 메서드 안에서 예외가 발생할 경우, 즉시 메서드를 종료하고 호출부 예외객체를 반환
+    // 호출부에서는 반환될 예외를 처리하기 위한 예외처리가 강제
+    public void throwsMalformedURLEx() throws MalformedURLException {
+        URL url = new URL("http://www.naver.com");
+        System.out.println("URL 객체 생성 성공!");
     }
 }
