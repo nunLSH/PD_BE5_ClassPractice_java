@@ -18,7 +18,20 @@ public class Run {
 //        pracGet();
 //        pracSet();
 //        pracRemove();
-        pracSort();
+//        pracSort();
+        pracIterable();
+    }
+
+    private static void pracIterable() {
+        _ArrayList<Integer> list = new _ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            list.add(i);
+        }
+        System.out.println(list);
+
+        for (Integer i : list){
+            System.out.println(i);
+        }
     }
 
     private static void pracSort() {
@@ -85,7 +98,7 @@ public class Run {
         }
 
         for (int i = 0; i < 30; i++){
-            System.out.println(list.get(i) + " ");
+            System.out.print(list.get(i) + " ");
         }
 
         System.out.println("\n==========================");
