@@ -16,6 +16,8 @@ public class A_OuterClass {
                 System.out.println("anonymous");
             }
         };
+
+        anonymous.print();
     }
 
     // NOTE GA03 Local Class
