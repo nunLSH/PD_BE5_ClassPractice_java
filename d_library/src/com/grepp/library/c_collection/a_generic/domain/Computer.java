@@ -2,7 +2,7 @@ package com.grepp.library.c_collection.a_generic.domain;
 
 public class Computer extends Device{
 
-    private String cpu;
+    protected String cpu;
 
     public Computer(String name, String cpu) {
         super(name);
