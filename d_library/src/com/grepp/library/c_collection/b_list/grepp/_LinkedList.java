@@ -4,7 +4,7 @@ import com.grepp.library.c_collection.z_domain.Node;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class _LinkedList<E> implements _List<E> {
+public class _LinkedList<E> implements Iterable<E>, _List<E> {
 
     private Node<E> head;
     private int pointer;  // size
@@ -110,5 +110,25 @@ public class _LinkedList<E> implements _List<E> {
         prevNode.setNexT(link.next());
         pointer--;
         return link.data();
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return new Iterator<E>() {
+            private int pointer;
+
+            @Override
+            public boolean hasNext() {
+                return pointer < size();
+            }
+
+            @Override
+            public E next() {
+                if (pointer >= size()) throw new NoSuchElementException();
+                E e = get(pointer);
+                pointer++;
+                return e;
+            }
+        };
     }
 }
