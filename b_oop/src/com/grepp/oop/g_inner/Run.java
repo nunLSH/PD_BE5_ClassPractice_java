@@ -13,5 +13,7 @@ public class Run {
         A_OuterClass a = new A_OuterClass("outer");
         InstanceInner instanceInner = a.new InstanceInner();
         instanceInner.print();
+
+        a.localClass();
     }
 }
