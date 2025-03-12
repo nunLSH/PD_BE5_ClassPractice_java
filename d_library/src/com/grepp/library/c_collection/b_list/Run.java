@@ -1,10 +1,13 @@
 package com.grepp.library.c_collection.b_list;
 
 import com.grepp.library.c_collection.b_list.grepp._ArrayList;
+import com.grepp.library.c_collection.b_list.grepp._LinkedList;
+import com.grepp.library.c_collection.b_list.grepp._List;
 import com.grepp.library.c_collection.z_domain.School;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Run {
@@ -14,7 +17,7 @@ public class Run {
         // NOTE CB01 : CRUD
         // 데이터를 조작하는 방법
         // Create, Read, Update, Delete
-        pracAdd();
+//        pracAdd();
 //        pracGet();
 //        pracSet();
 //        pracRemove();
@@ -24,10 +27,14 @@ public class Run {
 
     private static void pracIterable() {
         _ArrayList<Integer> list = new _ArrayList<>();
+//        list = new _ArrayList<>();
         for (int i = 0; i < 10; i++) {
             list.add(i);
         }
-        System.out.println(list);
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(list.get(i));
+        }
 
         for (Integer i : list){
             System.out.println(i);
@@ -51,16 +58,17 @@ public class Run {
     }
 
     private static void pracRemove() {
-        List<Integer> list = new ArrayList<>();
+        _ArrayList<Integer> list = new _ArrayList<>();
         for (int i = 0; i < 10; i++) {
             list.add(i);
         }
         System.out.println(list);
+        int a = list.remove(2);
+        System.out.println("삭제된 요소: " + a);
 
-        // 0, 1, 2, 3 인덱스 삭제
-//        List<Integer> sublist = list.subList(0,4);
-//        list.removeAll(sublist);
-//        System.out.println(list);
+        for (int i = 0; i < 9; i++) {
+            System.out.print(list.get(i) + " ");
+        }
     }
 
     private static void pracSet() {
@@ -70,13 +78,13 @@ public class Run {
         School minsa = new School("민사고", "대전", 3);
         School semyoung = new School("세명초", "속초", 1);
 
-        List<School> list = new ArrayList<>();
+        _ArrayList<School> list = new _ArrayList<>();
         list.add(seoul);
         list.add(yeonsei);
-        System.out.println(list);
+        System.out.println(list.get(0));
 
         list.set(0, grepp);
-        System.out.println(list);
+        System.out.println(list.get(0));
     }
 
     private static void pracGet(){
@@ -93,11 +101,13 @@ public class Run {
     private static void pracAdd(){
         _ArrayList<Integer> list = new _ArrayList<>();
 
-        for (int i = 0; i < 30; i++){
+        for (int i = 0; i < 10; i++){
             list.add(i);
         }
 
-        for (int i = 0; i < 30; i++){
+        list.add(2, 11);
+
+        for (int i = 0; i < 11; i++){
             System.out.print(list.get(i) + " ");
         }
 
