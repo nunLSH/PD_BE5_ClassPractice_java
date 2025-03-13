@@ -50,16 +50,21 @@ public class _LinkedList<E> implements _List<E> {
             return true;
         }
 
+        if (index == 0) {
+            current.setNexT(head);
+            head = current;
+            pointer++;
+            return true;
+        }
+
         Node<E> link = head;
         for (int i = 0; i < index - 1; i++) {
             link = link.next();
         }
-        Node<E> ll = link.next();
+
+        Node<E> nextNode = link.next();
         link.setNexT(current);
-        link = link.next();
-        for (int i = index; i < pointer; i++) {
-            link.setNexT(ll);
-        }
+        current.setNexT(nextNode);
 
         pointer++;
         return true;
@@ -94,12 +99,12 @@ public class _LinkedList<E> implements _List<E> {
         if (index < 0 || index >= pointer) throw new IndexOutOfBoundsException();
 
         Node<E> link = head;
-        Node<E> prevNode = head;
+        Node<E> prevNode = null;
 
         if (index == 0) {
             head = head.next();
             pointer--;
-            return prevNode.data();
+            return link.data();
         }
 
         for (int i = 0; i < index; i++) {
@@ -109,6 +114,7 @@ public class _LinkedList<E> implements _List<E> {
 
         prevNode.setNexT(link.next());
         pointer--;
+
         return link.data();
     }
 

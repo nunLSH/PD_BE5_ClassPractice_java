@@ -20,9 +20,9 @@ public class Run {
 //        pracAdd();
 //        pracGet();
 //        pracSet();
-//        pracRemove();
+        pracRemove();
 //        pracSort();
-        pracIterable();
+//        pracIterable();
     }
 
     private static void pracIterable() {
@@ -58,7 +58,7 @@ public class Run {
     }
 
     private static void pracRemove() {
-        _ArrayList<Integer> list = new _ArrayList<>();
+        _LinkedList<Integer> list = new _LinkedList<>();
         for (int i = 0; i < 10; i++) {
             list.add(i);
         }
@@ -99,7 +99,7 @@ public class Run {
     }
 
     private static void pracAdd(){
-        _ArrayList<Integer> list = new _ArrayList<>();
+        _LinkedList<Integer> list = new _LinkedList<>();
 
         for (int i = 0; i < 10; i++){
             list.add(i);
