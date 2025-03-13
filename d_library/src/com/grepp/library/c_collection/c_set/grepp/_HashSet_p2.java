@@ -43,10 +43,6 @@ public class _HashSet_p2<E>  {
         elementData = temp;
     }
 
-
-    /**
-     * Linked List로 변경할 것
-     */
     public boolean add(E e) {
         Node<E> node = new Node<E>(e);
 
@@ -74,9 +70,6 @@ public class _HashSet_p2<E>  {
         return true;
     }
 
-    /**
-     * Linked List로 변경할 것
-     */
     public boolean remove(E e){
         int index = hash(e);
         Node<E> head = (Node<E>) elementData[index];
@@ -104,9 +97,6 @@ public class _HashSet_p2<E>  {
         return false;
     }
 
-    /**
-     * Linked List로 변경할 것
-     */
     @Override
     public String toString(){
         StringBuffer sb = new StringBuffer();
