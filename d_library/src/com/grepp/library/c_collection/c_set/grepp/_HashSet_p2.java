@@ -3,13 +3,12 @@ package com.grepp.library.c_collection.c_set.grepp;
 import com.grepp.library.c_collection.z_domain.Node;
 import javax.management.NotificationEmitter;
 import javax.swing.event.CellEditorListener;
-
 @SuppressWarnings("unchecked")
 public class _HashSet_p2<E>  {
 
     private static final int DEFAULT_CAPACITY = 10;
     private int arraySize = 10;
-    private Object[] elementData;
+    protected Object[] elementData;
     private int size;
 
     public _HashSet_p2() {
@@ -24,7 +23,7 @@ public class _HashSet_p2<E>  {
         return size == 0;
     }
 
-    private int hash(E e){
+    protected int hash(E e){
         // hashCode : -21억 ~ +21억
         // 0 ~ 21 억 사이의 값 반환
         int hashCode = Math.abs(e.hashCode());
@@ -44,6 +43,10 @@ public class _HashSet_p2<E>  {
         elementData = temp;
     }
 
+
+    /**
+     * Linked List로 변경할 것
+     */
     public boolean add(E e) {
         Node<E> node = new Node<E>(e);
 
@@ -71,6 +74,9 @@ public class _HashSet_p2<E>  {
         return true;
     }
 
+    /**
+     * Linked List로 변경할 것
+     */
     public boolean remove(E e){
         int index = hash(e);
         Node<E> head = (Node<E>) elementData[index];
@@ -98,6 +104,9 @@ public class _HashSet_p2<E>  {
         return false;
     }
 
+    /**
+     * Linked List로 변경할 것
+     */
     @Override
     public String toString(){
         StringBuffer sb = new StringBuffer();
