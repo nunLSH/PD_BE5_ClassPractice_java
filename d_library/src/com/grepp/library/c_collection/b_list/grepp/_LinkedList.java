@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 public class _LinkedList<E> implements Iterable<E>, _List<E> {
 
     private Node<E> head;
-    private int pointer;  // size
+    private int pointer;
 
     public int size(){
         return pointer;
@@ -115,7 +115,9 @@ public class _LinkedList<E> implements Iterable<E>, _List<E> {
     @Override
     public Iterator<E> iterator() {
         return new Iterator<E>() {
-            private int pointer;
+            // Iterator 인터페이스를 구현하는 익명클래스
+
+            private int pointer;  // 반환할 위치의 노드
 
             @Override
             public boolean hasNext() {

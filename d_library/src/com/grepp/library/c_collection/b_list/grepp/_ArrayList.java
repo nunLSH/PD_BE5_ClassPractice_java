@@ -8,7 +8,7 @@ public class _ArrayList<E> implements Iterable<E>, _List<E>{
 
     private Object[] elementData;
     private static final int DEFAULT_CAPACIT = 10;
-    private int pointer;   // size
+    private int pointer;
     private int arraySize;
 
     public _ArrayList() {
