@@ -9,6 +9,15 @@ public class _EntrySet<E> extends _HashSet_p2<E> {
     _EntrySet() {
     }
 
+    @Override
+    public boolean add(E e) {
+        if(get(e) != null){
+            super.remove(e);
+        }
+
+        return super.add(e);
+    }
+
     public E get(E e){
          int index = hash(e);
          Node<E> head = (Node<E>) super.elementData[index];
