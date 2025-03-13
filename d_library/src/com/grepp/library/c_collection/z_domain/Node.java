@@ -1,5 +1,7 @@
 package com.grepp.library.c_collection.z_domain;
 
+import java.util.Objects;
+
 public class Node<E> {
 
     private Node<E> next;
@@ -28,5 +30,18 @@ public class Node<E> {
     @Override
     public String toString() {
         return data().toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Node<?> node)) {
+            return false;
+        }
+        return Objects.equals(data, node.data);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(data);
     }
 }

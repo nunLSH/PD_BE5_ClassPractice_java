@@ -1,6 +1,7 @@
 package com.grepp.library.c_collection.c_set;
 
-import com.grepp.library.c_collection.c_set.grepp._HashSet;
+import com.grepp.library.c_collection.c_set.grepp._HashSet_p1;
+import com.grepp.library.c_collection.c_set.grepp._HashSet_p2;
 import com.grepp.library.c_collection.z_domain.School;
 import com.grepp.library.c_collection.z_domain.SchoolFactory;
 import java.util.HashSet;
@@ -59,7 +60,7 @@ public class Run {
 
     private static void pracRemove() {
         List<School> list = SchoolFactory.createSchools();
-        _HashSet<School> set = new _HashSet<>();
+        _HashSet_p2<School> set = new _HashSet_p2<>();
 
         for(School school : list){
             set.add(school);
@@ -71,7 +72,7 @@ public class Run {
     }
 
     private static void pracAdd() {
-        _HashSet<School> set = new _HashSet<>();
+        _HashSet_p2<School> set = new _HashSet_p2<>();
         List<School> list = SchoolFactory.createSchools();
 
         for (School school : list){

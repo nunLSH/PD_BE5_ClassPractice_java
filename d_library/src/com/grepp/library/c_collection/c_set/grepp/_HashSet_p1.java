@@ -1,16 +1,15 @@
 package com.grepp.library.c_collection.c_set.grepp;
 
 import java.util.Arrays;
-import javax.swing.event.CellEditorListener;
 
-public class _HashSet<E> {
+public class _HashSet_p1<E> {
 
     private static final int DEFAULT_CAPACITY = 10;
     private int arraySize = 10;
     private Object[] elementData;
     private int size;
 
-    public _HashSet() {
+    public _HashSet_p1() {
         this.elementData = new Object[DEFAULT_CAPACITY];
     }
 
