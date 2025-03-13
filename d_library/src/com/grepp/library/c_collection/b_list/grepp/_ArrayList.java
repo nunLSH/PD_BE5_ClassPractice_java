@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 @SuppressWarnings("unchecked")
-public class _ArrayList<E> implements Iterable<E>, _List<E>{
+public class _ArrayList<E> implements _List<E>{
 
     private Object[] elementData;
     private static final int DEFAULT_CAPACIT = 10;
