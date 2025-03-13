@@ -1,5 +1,6 @@
 package com.grepp.library.c_collection.c_set;
 
+import com.grepp.library.c_collection.c_set.grepp._HashSet;
 import com.grepp.library.c_collection.z_domain.School;
 import com.grepp.library.c_collection.z_domain.SchoolFactory;
 import java.util.HashSet;
@@ -11,7 +12,7 @@ public class Run {
     public static void main(String[] args) {
 
 //        pracAdd();
-//        pracRemove();
+        pracRemove();
 
         List<String> firstList = List.of(
             "임서현",
@@ -29,7 +30,7 @@ public class Run {
         );
         Set<String> firstSet = new HashSet<>(firstList);
         Set<String> secondSet = new HashSet<>(secondList);
-        pracSetOperation(firstSet, secondSet);
+//        pracSetOperation(firstSet, secondSet);
     }
 
     private static void pracSetOperation(Set<String> firstSet, Set<String> secondSet) {
@@ -58,23 +59,27 @@ public class Run {
 
     private static void pracRemove() {
         List<School> list = SchoolFactory.createSchools();
-        Set<School> set = new HashSet<>(list);
-        System.out.println(set);
+        _HashSet<School> set = new _HashSet<>();
 
+        for(School school : list){
+            set.add(school);
+        }
+
+        System.out.println(set);
         set.remove(new School("민사고", "대전", 3));
         System.out.println(set);
     }
 
     private static void pracAdd() {
-        Set<School> set = new HashSet<>();
+        _HashSet<School> set = new _HashSet<>();
         List<School> list = SchoolFactory.createSchools();
 
-//        for (School school : list){
-//            set.add(school);
-//        }
-        set.addAll(list);
-        System.out.println(set);
+        for (School school : list){
+            System.out.println(school);
+            System.out.println(set.add(school));
+        }
 
+        System.out.println(set);
     }
 
 }
