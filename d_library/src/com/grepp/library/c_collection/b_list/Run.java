@@ -7,6 +7,7 @@ import com.grepp.library.c_collection.z_domain.School;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -20,8 +21,8 @@ public class Run {
 //        pracAdd();
 //        pracGet();
 //        pracSet();
-        pracRemove();
-//        pracSort();
+//        pracRemove();
+        pracSort();
 //        pracIterable();
     }
 
@@ -53,7 +54,15 @@ public class Run {
 
         Collections.sort(nums);
         System.out.println(nums);
-        Collections.sort(schools);
+        Collections.sort(schools, (a, b) -> a.getName().compareTo(b.getName()));
+//        Collections.sort(schools, new Comparator<School>() {
+//            @Override
+//            public int compare(School o1, School o2) {
+//                return o1.getName().compareTo(o2.getName());
+//            }
+//        });
+
+
         System.out.println(schools);
     }
 
