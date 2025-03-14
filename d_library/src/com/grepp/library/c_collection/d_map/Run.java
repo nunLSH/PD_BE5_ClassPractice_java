@@ -4,6 +4,7 @@ import com.grepp.library.c_collection.d_map.grepp._HashMap;
 import com.grepp.library.c_collection.z_domain.School;
 import com.grepp.library.c_collection.z_domain.SchoolFactory;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -12,8 +13,23 @@ public class Run {
 
     public static void main(String[] args) {
         List<School> schools = SchoolFactory.createSchools();
-        pracPut();
-        pracGet();
+//        pracPut();
+//        pracGet();
+        pracLinkedHashMap();
+    }
+
+    private static void pracLinkedHashMap() {
+        List<School> schools = SchoolFactory.createSchools();
+        // 순서 보장
+        Map<String, School> linkedMap = new LinkedHashMap<>();
+        // 순서 보장하지 않음.
+        Map<String, School> hashMap = new HashMap<>();
+        for(School school : schools){
+            linkedMap.put(school.getName(), school);
+            hashMap.put(school.getName(), school);
+        }
+        System.out.println(linkedMap);
+        System.out.println(hashMap);
     }
 
     private static void pracGet() {
