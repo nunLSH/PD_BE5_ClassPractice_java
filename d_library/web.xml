@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>web server properties</comment>
+<entry key="PORT">8080</entry>
+<entry key="HOST">localhost</entry>
+</properties>
