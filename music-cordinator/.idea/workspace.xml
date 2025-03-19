@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3653bc8d-31be-4b92-a7bc-f08a4fb8cdcd" name="Changes" comment="(0319) feat: Format 인터페이스 추가">
-      <change beforePath="$PROJECT_DIR$/../music-coordinator" beforeDir="false" afterPath="$PROJECT_DIR$/../music-coordinator" afterDir="false" />
-    </list>
+    <list default="true" id="3653bc8d-31be-4b92-a7bc-f08a4fb8cdcd" name="Changes" comment="(0319) feat: Format 인터페이스 추가" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +94,7 @@
       <updated>1742261417802</updated>
       <workItem from="1742261418779" duration="22624000" />
       <workItem from="1742306151751" duration="10000" />
-      <workItem from="1742342456280" duration="10818000" />
+      <workItem from="1742342456280" duration="10843000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
