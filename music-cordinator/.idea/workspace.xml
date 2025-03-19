@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3653bc8d-31be-4b92-a7bc-f08a4fb8cdcd" name="Changes" comment="(0319) feat: Format 인터페이스 추가">
+      <change beforePath="$PROJECT_DIR$/../music-coordinator" beforeDir="false" afterPath="$PROJECT_DIR$/../music-coordinator" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nunLSH&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nunLSH/PD_BE5_ClassPractice_java.git&quot;,
+    &quot;accountId&quot;: &quot;3f007a3e-21ce-47bd-abfa-6cdbe58fcf29&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2uT8sE7yMooIsfGdh3fRWi6dMuj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Run.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.gemini | GET request to example server.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/imseohyeon/Desktop/Programmers/backend/a_java/grepp-llm/src/com/grepp/llm&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../grepp-llm/src/com/grepp/llm" />
+      <recent name="$PROJECT_DIR$/../grepp-llm/src/com/grepp/llm/gemini/text" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.grepp.mc.infra.llm.gemini.text" />
+      <recent name="com.grepp.mc.infra.llm" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3653bc8d-31be-4b92-a7bc-f08a4fb8cdcd" name="Changes" comment="" />
+      <created>1742261417802</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742261417802</updated>
+      <workItem from="1742261418779" duration="22624000" />
+      <workItem from="1742306151751" duration="10000" />
+      <workItem from="1742342456280" duration="10818000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1742264037828</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742264037828</updated>
+    </task>
+    <task id="LOCAL-00002" summary="(0318) QR Code 생성">
+      <option name="closed" value="true" />
+      <created>1742264066908</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742264066908</updated>
+    </task>
+    <task id="LOCAL-00003" summary="(0318) refactor: QR Code 생성">
+      <option name="closed" value="true" />
+      <created>1742264416666</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742264416666</updated>
+    </task>
+    <task id="LOCAL-00004" summary="(0318) HTTP &gt; Google Gemini API로 POST 요청">
+      <option name="closed" value="true" />
+      <created>1742277344761</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742277344761</updated>
+    </task>
+    <task id="LOCAL-00005" summary="(0318) HTTP &gt; Gson 라이브러리 사용 _ 객체를 JSON 문자열로 변환 후 다시 객체로 변환">
+      <option name="closed" value="true" />
+      <created>1742278836709</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742278836709</updated>
+    </task>
+    <task id="LOCAL-00006" summary="(0318) HTTP &gt; Gson 라이브러리 사용 _ Google Gemini API 요청 데이터를 생성, JSON 문자열로 변환">
+      <option name="closed" value="true" />
+      <created>1742281517202</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742281517202</updated>
+    </task>
+    <task id="LOCAL-00007" summary="(0318) HTTP &gt; GeminiChatModel 따로 분리">
+      <option name="closed" value="true" />
+      <created>1742281625757</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742281625757</updated>
+    </task>
+    <task id="LOCAL-00008" summary="(0318) HTTP &gt; GeminiChatModel 요청 처리">
+      <option name="closed" value="true" />
+      <created>1742293127250</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742293127250</updated>
+    </task>
+    <task id="LOCAL-00009" summary="(0319) fix: 응답객체 수정">
+      <option name="closed" value="true" />
+      <created>1742343339466</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742343339466</updated>
+    </task>
+    <task id="LOCAL-00010" summary="(0319) feat: QR Code 생성하여 음악 추천">
+      <option name="closed" value="true" />
+      <created>1742345578859</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742345578859</updated>
+    </task>
+    <task id="LOCAL-00011" summary="(0319) refactor: llm을 모듈로 분리">
+      <option name="closed" value="true" />
+      <created>1742351403134</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742351403134</updated>
+    </task>
+    <task id="LOCAL-00012" summary="(0319) refactor: llm을 모듈로 분리">
+      <option name="closed" value="true" />
+      <created>1742351410643</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742351410643</updated>
+    </task>
+    <task id="LOCAL-00013" summary="(0319) feat: Format 인터페이스 추가">
+      <option name="closed" value="true" />
+      <created>1742352875861</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1742352875861</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="(0318) QR Code 생성" />
+    <MESSAGE value="(0318) refactor: QR Code 생성" />
+    <MESSAGE value="(0318) HTTP &gt; Google Gemini API로 POST 요청" />
+    <MESSAGE value="(0318) HTTP &gt; Gson 라이브러리 사용 _ 객체를 JSON 문자열로 변환 후 다시 객체로 변환" />
+    <MESSAGE value="(0318) HTTP &gt; Gson 라이브러리 사용 _ Google Gemini API 요청 데이터를 생성, JSON 문자열로 변환" />
+    <MESSAGE value="(0318) HTTP &gt; GeminiChatModel 따로 분리" />
+    <MESSAGE value="(0318) HTTP &gt; GeminiChatModel 요청 처리" />
+    <MESSAGE value="(0319) fix: 응답객체 수정" />
+    <MESSAGE value="(0319) feat: QR Code 생성하여 음악 추천" />
+    <MESSAGE value="(0319) refactor: llm을 모듈로 분리" />
+    <MESSAGE value="(0319) feat: Format 인터페이스 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="(0319) feat: Format 인터페이스 추가" />
+  </component>
+</project>
