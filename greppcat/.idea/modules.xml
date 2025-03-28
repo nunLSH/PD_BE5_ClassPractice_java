@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/greppcat.iml" filepath="$PROJECT_DIR$/greppcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../qrcode-webapp/qrcode-webapp.iml" filepath="$PROJECT_DIR$/../qrcode-webapp/qrcode-webapp.iml" />
     </modules>
   </component>
 </project>

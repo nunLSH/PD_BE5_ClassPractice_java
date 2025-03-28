@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../greppcat/greppcat.iml" filepath="$PROJECT_DIR$/../greppcat/greppcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qrcode-webapp.iml" filepath="$PROJECT_DIR$/qrcode-webapp.iml" />
+    </modules>
+  </component>
+</project>
